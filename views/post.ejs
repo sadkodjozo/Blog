@@ -3,6 +3,11 @@
 <h1> <%= title %></h1>
 
 <p> <%= content %> </p>
-
+<form action="/delete" method="post">
+    
+    <button class="btn btn-danger" type="submit" name="deletePost" value="<%= postId %>">Delete Post</button>
+    
+    
+</form>
 
 <%- include ('partials/footer'); -%>
